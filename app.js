@@ -27,8 +27,16 @@
 // }
 
 
-for (i = 0; i < 2; i++) {
-    for (var j = 0; j < 3; j++) {
-        console.log("Hello");
+// for (i = 0; i < 2; i++) {
+//     for (var j = 0; j < 3; j++) {
+//         console.log("Hello");
+//     }
+// }
+
+function listArrayItems(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        console.log(i, arr[i])
     }
 }
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];
+listArrayItems(colors);
