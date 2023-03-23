@@ -98,22 +98,38 @@
 // console.log(toPay);
 
 //object paradigm
-var purchase1 = {
-    shoes: 100,
-    stateTax: 1.2,
-    totalPrice: function(){
-        var calculation = purchase1.shoes * purchase1.stateTax;
-        console.log(`Total Price: `, calculation);
-    }
-}
-purchase1.totalPrice();
+// var purchase1 = {
+//     shoes: 100,
+//     stateTax: 1.2,
+//     totalPrice: function(){
+//         var calculation = purchase1.shoes * purchase1.stateTax;
+//         console.log(`Total Price: `, calculation);
+//     }
+// }
+// purchase1.totalPrice();
 
-var purchase2 = {
-    shoes: 50,
-    stateTax: 1.2,
-    totalPrice: function(){
-        var calculation = this.shoes * this.stateTax;
-        console.log(`Total Price: `, calculation);
+// var purchase2 = {
+//     shoes: 50,
+//     stateTax: 1.2,
+//     totalPrice: function(){
+//         var calculation = this.shoes * this.stateTax;
+//         console.log(`Total Price: `, calculation);
+//     }
+// }
+// purchase2.totalPrice();
+
+//classes
+
+class Car {
+    constructor(color,speed){
+        this.color = "color";
+        this.speed = speed;
+
+    }
+    turboOn(){
+        console.log("Trubo is on");
     }
 }
-purchase2.totalPrice();
+var car1 = new Car("Red",120);
+
+car1.turboOn();
