@@ -120,16 +120,29 @@
 
 //classes
 
-class Car {
-    constructor(color,speed){
-        this.color = "color";
-        this.speed = speed;
+// class Car {
+//     constructor(color,speed){
+//         this.color = "color";
+//         this.speed = speed;
 
-    }
-    turboOn(){
-        console.log("Trubo is on");
-    }
+//     }
+//     turboOn(){
+//         console.log("Trubo is on");
+//     }
+// }
+// var car1 = new Car("Red",120);
+
+// car1.turboOn();
+
+
+// prototype
+
+var animals = {
+    hasWings: false,
+    hasTail: true,
+    givesMilk: true,
+    adorable: true,
 }
-var car1 = new Car("Red",120);
 
-car1.turboOn();
+let buffalow = Object.create(animals);
+console.log(buffalow.givesMilk);
