@@ -73,14 +73,24 @@
 // letterFinder([],[])
 // letterFinder("cat","c")
 
-var bird = {
-    hasWings: true,
-    canFly: true,
-    hasFurr: true,
-    has4legs: false,
-};
+// var bird = {
+//     hasWings: true,
+//     canFly: true,
+//     hasFurr: true,
+//     has4legs: false,
+// };
 
-var sparrow = Object.create(bird);
-var parrot = Object.create(bird);
+// var sparrow = Object.create(bird);
+// var parrot = Object.create(bird);
 
-console.log(parrot.has4legs);
+// console.log(parrot.has4legs);
+
+var shoes = 100;
+var stateTax = 1.2;
+
+function totalPrice (shoes,tax){
+    return shoes * tax;
+}
+
+var toPay = totalPrice(shoes,stateTax);
+console.log(toPay);
