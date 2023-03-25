@@ -137,12 +137,17 @@
 
 // prototype
 
-var animals = {
-    hasWings: false,
-    hasTail: true,
-    givesMilk: true,
-    adorable: true,
-}
+// var animals = {
+//     hasWings: false,
+//     hasTail: true,
+//     givesMilk: true,
+//     adorable: true,
+// }
 
-let buffalow = Object.create(animals);
-console.log(buffalow.givesMilk);
+// let buffalow = Object.create(animals);
+// console.log(buffalow.givesMilk);
+
+
+const greeting = "Hello";
+const arrayOfChars = [...greeting];
+console.log(arrayOfChars);
